@@ -3,7 +3,7 @@
 body {
 	max-width: 100%;
 	margin: 0 auto;
-	background-color: #8fd8d8;
+	background-color: white;
 }
 
 h1 {
@@ -30,17 +30,23 @@ img {
 }
 
 
+legend {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 20px 0 5px 0;
+	margin-top: 5px;
+	
+	width: 100%;
+	border-top: 2px solid black;
+	
+}
 h2 {
 	text-align: center;
 
 }
 
-h3 {
-	border-top: 2px solid black;
-	padding: 20px 0 5px 0;
-	margin-top: 5px;
 
-}
+
 
 .underline p {
 	text-align: center;
@@ -84,7 +90,7 @@ footer.copyright {
 .contact-form {
 	width: 80%;
 	display: inline-block;
-
+	padding-top: 10px; 
 }
 
 #message {
@@ -114,6 +120,7 @@ fieldset {
 	vertical-align: middle;
 	border: none;
 	width: 95%;
+	height: 100%;
 	background-color: #e6e6fa;
 }
 
@@ -133,7 +140,7 @@ input[type=radio]:checked + label {
 	background-color: #bced91;
 }
 
-input[type="zipcode"] {
+#zipcode {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 20px;
@@ -143,20 +150,16 @@ input[type="zipcode"] {
   padding: 10px;
   background-color: #bced91;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
-  width: 80%;
+  width: 70%;
 }
 
 input[type="text"],
-input[type="address"],
 input[type="email"],
-input[type="city"],
-input[type="state"],
 input[type="tel"],
 textarea,
 select {
-  
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 20px;
@@ -167,7 +170,21 @@ select {
   width: 100%;
   background-color: #bced91;
   color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
+  margin-bottom: 30px;
+}
+#state {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 20px;
+  height: 40px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  width: 108%;
+  background-color: #bced91;
+  color: #8a97a0;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
 }
 
@@ -243,26 +260,23 @@ img {
 }
 
 
-input[type="zipcode"] {
+div #zipcode  {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 20px;
   height: 20px;
-  max-width: 40%;
+  width: 20%;
   outline: 0;
   padding: 10px;
   background-color: #bced91;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  float: right;
-  
+  float: left;
+  margin-left: 18%;
 }
 
 input[type="text"],
-input[type="address"],
 input[type="email"],
-input[type="city"],
-input[type="state"],
 input[type="tel"],
 select {
   background: rgba(255,255,255,0.1);
@@ -275,10 +289,27 @@ select {
   max-width: 60%;
   background-color: #bced91;
   color: #8a97a0;
-  box-shadow: 0 5px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: inset 0 5px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
   float: right;
 }
+
+#state {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 15px;
+  height: 40px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  max-width: 64%;
+  background-color: #bced91;
+  color: #8a97a0;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
+  margin-bottom: 30px;
+  
+}
+
 
 textarea {
   background: rgba(255,255,255,0.1);
@@ -291,7 +322,7 @@ textarea {
   max-width: 65%;
   background-color: #bced91;
   color: #8a97a0;
-  box-shadow: 0 5px 0 rgba(0,0,0,0.03) inset;
+  box-shadow: inset 0 5px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
   
 
@@ -356,3 +387,36 @@ fieldset {
 	
 }
 
+@media screen and (min-width: 1024px) {
+
+	div #zipcode  {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 20px;
+  height: 20px;
+  width: 20%;
+  outline: 0;
+  padding: 10px;
+  background-color: #bced91;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  float: left;
+  margin-left: 250px;
+	}
+
+	#state {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 15px;
+  height: 40px;
+  margin: 0;
+  outline: 0;
+  padding: 10px;
+  max-width: 62%;
+  background-color: #bced91;
+  color: #8a97a0;
+  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
+  margin-bottom: 30px;
+  
+}
+}
