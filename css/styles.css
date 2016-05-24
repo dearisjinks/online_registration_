@@ -46,8 +46,6 @@ h2 {
 }
 
 
-
-
 .underline p {
 	text-align: center;
 	border-bottom: 5px solid black;
@@ -88,16 +86,18 @@ footer.copyright {
 }
 
 .contact-form {
-	width: 80%;
+	width: 90%;
 	display: inline-block;
 	padding-top: 10px; 
+	box-sizing: border-box;
 }
 
 #message {
 	padding: 10px;
-	max-width: 100%;
+	width: 95%;
 	vertical-align: middle;
 	height: 80px;
+
 }
 
 .btn {
@@ -111,6 +111,7 @@ footer.copyright {
   max-width: 100%;
   background-color: #add8e6;
   border-radius: 10px;
+
 }
 
 fieldset {
@@ -119,14 +120,15 @@ fieldset {
 	display: inline-block;
 	vertical-align: middle;
 	border: none;
-	width: 95%;
+	width: 100%;
 	height: 100%;
 	background-color: #e6e6fa;
+	
 }
 
 #container {
 	max-width: 80%;
-	margin:0 auto;
+	margin: auto;
 }
 
 
@@ -145,7 +147,7 @@ input[type=radio]:checked + label {
   border: none;
   font-size: 20px;
   height: 20px;
-  margin: 0;
+  margin: 5px;
   outline: 0;
   padding: 10px;
   background-color: #bced91;
@@ -153,6 +155,12 @@ input[type=radio]:checked + label {
   box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
   width: 70%;
+
+}
+#zipcode:focus {
+	border-color: #9ecaed;
+	box-shadow: 0 0 100px #9ecaed;
+	outline: solid;
 }
 
 input[type="text"],
@@ -164,28 +172,31 @@ select {
   border: none;
   font-size: 20px;
   height: 20px;
-  margin: 0;
+  margin: 0 auto;
   outline: 0;
   padding: 10px;
-  width: 100%;
+  width: 90%;
   background-color: #bced91;
   color: #8a97a0;
   box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
+  
 }
+
 #state {
   background: rgba(255,255,255,0.1);
   border: none;
   font-size: 20px;
   height: 40px;
-  margin: 0;
+  margin: 0 auto;
   outline: 0;
   padding: 10px;
-  width: 108%;
+  width: 90%;
   background-color: #bced91;
   color: #8a97a0;
   box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
   margin-bottom: 30px;
+
 }
 
 input:focus {
@@ -196,8 +207,12 @@ input:focus {
 
 
 
-#message {
-	width: 95%;
+
+
+#message:focus {
+	border-color: #9ecaed;
+	box-shadow: 0 0 100px #9ecaed;
+	outline: solid;
 }
 
 
@@ -253,7 +268,7 @@ img {
 }
 
 .contact-form {
-	
+	box-sizing: border-box;
 	width: 100%;
 	display: inline-block;
 
@@ -387,36 +402,3 @@ fieldset {
 	
 }
 
-@media screen and (min-width: 1024px) {
-
-	div #zipcode  {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 20px;
-  height: 20px;
-  width: 20%;
-  outline: 0;
-  padding: 10px;
-  background-color: #bced91;
-  color: #8a97a0;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  float: left;
-  margin-left: 250px;
-	}
-
-	#state {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 15px;
-  height: 40px;
-  margin: 0;
-  outline: 0;
-  padding: 10px;
-  max-width: 62%;
-  background-color: #bced91;
-  color: #8a97a0;
-  box-shadow: inset 0 1px 0 rgba(0,0,0,0.03);
-  margin-bottom: 30px;
-  
-}
-}
