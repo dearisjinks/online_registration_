@@ -55,6 +55,7 @@ legend {
 	border-top: 2px solid black;
 	
 }
+
 h2 {
 	text-align: center;
 
@@ -65,6 +66,7 @@ h2 {
 	text-align: center;
 	border-bottom: 5px solid black;
 	padding-bottom: 40px;
+	width: 100%;
 }
 
 p {
@@ -158,7 +160,7 @@ input[type=checkbox]:checked + label,
 input[type=radio]:checked + label {
 	margin: 0 4px 8px 0;
 	cursor: pointer;
-	;
+	
 }
 
 #zipcode {
@@ -249,7 +251,6 @@ input:focus {
 /*********************MEDIA QUERY***************************/
 
 @media screen and (min-width: 760px) {
-
 	body {
 	max-width: 100%;
 	margin: 0 auto;
@@ -267,6 +268,14 @@ h1 {
 	
 }
 
+.underline p {
+	text-align: center;
+	border-bottom: 5px solid black;
+	
+	width: 100%;
+}
+
+
 img {
 	height: 100px;
 	max-width: 100%;
@@ -282,7 +291,7 @@ img {
 
 #container {
 	
-	max-width: 70%;
+	width: 60%;
 	margin:0 auto;
 }
 
@@ -292,6 +301,7 @@ img {
 	display: inline-block;
 
 }
+
 
 
 #zipcode  {
@@ -354,7 +364,7 @@ textarea {
   margin: 0;
   outline: 0;
   padding: 0;
-  max-width: 100%;
+  max-width: 95%;
   background-color: #bced91;
   color: #8a97a0;
   box-shadow: inset 0 5px 0 rgba(0,0,0,0.03);
@@ -388,7 +398,11 @@ input[type=radio] {
 	display: inline-block;
 }
 
-
+input:focus {
+	border-color: #9ecaed;
+	box-shadow: 0 0 50px #9ecaed;
+	outline: solid;
+}
 
 #zipcode:focus {
 	border-color: #9ecaed;
@@ -411,7 +425,8 @@ footer {
 fieldset {
 	margin-bottom: 30px;
 	border: none;
-	width: 100%;
+	width: 95%;
+
 	
 }
 
@@ -420,7 +435,7 @@ fieldset {
 }
 
 .btn {
-	width: 100%
+	width: 95%;
 
 }
 
