@@ -20,31 +20,32 @@
 	<form class="contact-form">
 		<fieldset>
 		<legend>Contact Information</legend>
-		<div>
 			<label for="name">Full Name:</label>
-			<input type="text" id="name" placeholder="Required">
+			<input type="text" id="name" placeholder="Required" name="full-name">
 			<br>
 			<label for="email">Email Address:</label>
-			<input type="email" id="email" placeholder="Required">
+			<input type="email" id="email" placeholder="Required" name="email-address">
 			<br>
 			<label for="tel">Phone Number:</label>
-			<input type="tel" id="tel">
+			<input type="tel" id="tel" name="phone">
 			<br>
 			<label for="address">Street Address: </label>
-			<input type="text" id="address">
+			<input type="text" id="address" name="street-address">
 			<br>
 			<label for="city">City:</label>
-			<input type="text" id="city">
+			<input type="text" id="city" name="city-location">
 			<br>
 			<label for="state">State:</label>
-			<select id="state" name="text">
+			<select id="state" name="states">
 				<option value="Maine">Maine</option>
 				<option value="Georgia">Georgia</option>
 				<option value="New Jersey">New jersey</option>
 			</select>
 			<br>
+			
 			<label for="zipcode">Zipcode:</label>
-			<input type="text" id="zipcode" name="">
+			<input type="text" id="zipcode" name="zip">
+			
 	</fieldset>
 	<fieldset>
 		<legend>Newsletter</legend>
@@ -59,18 +60,18 @@
 		<label class="light" for="java-news">Javascript News</label>
 		<br><br>
 		<p>Newsletter Format</p>
-			<input  type="radio" id="HTML" name="radio">
+			<input  type="radio" id="HTML" name="newsletter">
 			<label class="light" for="HTML">HTML</label>
 			<br><br>
-			<input  type="radio" id="Form" name="radio">	
+			<input  type="radio" id="Form" name="newsletter">	
 			<label class="light" for="Form">Form Text</label>
 	</fieldset>
 			<p>Other topics you'd would like to hear about</p>
 			<textarea id="message" rows="7"></textarea>
             <br>
-			<input class="btn default" type="submit" value="Sign Up" for="message">
-		</div>
+			<input class="btn default" type="submit" value="Sign Up" name="text-message">
 	</form>
+	</div>
 	<footer class="copyright">Copyright the Code review</footer>
 </body>
 </html>
