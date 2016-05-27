@@ -17,6 +17,22 @@ h1 {
 	text-align: center;
 }
 
+::-webkit-input-placeholder {
+	text-align: right;
+
+}
+
+::-moz-placeholder {
+	text-align: right;
+
+}
+
+::-ms-input-placeholder {
+	text-align: right;
+
+}
+
+
 
 
 img {
@@ -35,7 +51,6 @@ legend {
 	font-weight: bold;
 	padding: 20px 0 5px 0;
 	margin-top: 5px;
-	
 	width: 100%;
 	border-top: 2px solid black;
 	
@@ -131,6 +146,10 @@ fieldset {
 	margin: auto;
 }
 
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+	outline: 0;
+}
 
 
 
@@ -139,7 +158,7 @@ input[type=checkbox]:checked + label,
 input[type=radio]:checked + label {
 	margin: 0 4px 8px 0;
 	cursor: pointer;
-	background-color: #bced91;
+	;
 }
 
 #zipcode {
@@ -287,7 +306,7 @@ img {
   background-color: #bced91;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-right: 220px;
+  float: left;
   
 }
 
@@ -345,8 +364,9 @@ textarea {
 }
 
 div label {
-
+	width: 40%;
 	float: left;
+	text-align: left;
 }
 
 label {
@@ -368,11 +388,7 @@ input[type=radio] {
 	display: inline-block;
 }
 
-input:focus {
-	border-color: #9ecaed;
-	box-shadow: 0 0 50px #9ecaed;
-	outline: solid;
-}
+
 
 #zipcode:focus {
 	border-color: #9ecaed;
@@ -381,11 +397,8 @@ input:focus {
 }
 
 label.light {
-
 font-weight: 300;
 font-size: 15px;
-
-
 }
 
 footer {
@@ -398,7 +411,7 @@ footer {
 fieldset {
 	margin-bottom: 30px;
 	border: none;
-	
+	width: 100%;
 	
 }
 
