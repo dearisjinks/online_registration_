@@ -73,6 +73,14 @@ p {
 	text-align: left;
 }
 
+.topic {
+	text-align: left;
+	font-size: 12px;
+	width: 100%;
+}
+
+
+
 header p {
 	text-align: center;
 }
@@ -271,7 +279,6 @@ h1 {
 .underline p {
 	text-align: center;
 	border-bottom: 5px solid black;
-	
 	width: 100%;
 }
 
@@ -437,6 +444,12 @@ fieldset {
 .btn {
 	width: 95%;
 
+}
+
+.topic {
+	text-align: left;
+	font-size: 15px;
+	width: 100%;
 }
 
 
